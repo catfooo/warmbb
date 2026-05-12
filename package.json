@@ -1,0 +1,23 @@
+{
+  "name": "warmbb",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catfooo/warmbb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catfooo/warmbb/issues"
+  },
+  "homepage": "https://github.com/catfooo/warmbb#readme",
+  "description": "",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}
