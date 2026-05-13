@@ -159,3 +159,12 @@ app.listen(PORT, () => {
 //       .catch(err => console.log("ping error:", err.message));
 //   }, 5 * 60 * 1000);
 // }
+
+// keep server stay alive
+if (process.env.NODE_ENV === "production") {
+  setInterval(() => {
+    fetch("https://warmbb.onrender.com")
+      .then(() => console.log("keep-alive ping"))
+      .catch(err => console.log("ping error:", err.message));
+  }, 5 * 60 * 1000);
+}
